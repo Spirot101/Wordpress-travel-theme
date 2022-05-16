@@ -10,33 +10,21 @@ while(have_posts()) {
   <div class="page-banner__content container container--narrow">
     <h1 class="page-banner__title"><?php the_title(); ?></h1>
     <div class="page-banner__intro">
-      <p>Det finns något för alla. Ta en titt runt.</p>
+      <p>Håll dig uppdaterad med våra senaste nyheter!</p>
     </div>
   </div>  
 </div>
 
 <!-- Call to action btn's -->
 <div class="container container--narrow page-section">
-  <div class="metabox metabox--position-up metabox--with-home-link">
-    <p><a class="metabox__archive-home-link" href="<?php echo site_url('wcm-travel') ?>"><i class="fa fa-plane" aria-hidden="true"></i> Resor</a>
-    </p>
-  </div>
-  
-  <!--
-  <div class="page-links">
-    <h2 class="page-links__title"><a href="#">About Us</a></h2>
-    <ul class="min-list">
-      <li class="current_page_item"><a href="#">Our History</a></li>
-      <li><a href="#">Our Goals</a></li>
-    </ul>
-  </div>
-  -->
 
   <div class="generic-content">
     <?php the_content(); ?>
   </div>
-
+  
 </div>
+<hr class="container--narrow">
+<?php comments_template(); ?>
   
 <?php }
 

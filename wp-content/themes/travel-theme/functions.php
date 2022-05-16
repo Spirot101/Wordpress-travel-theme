@@ -19,27 +19,6 @@ function travel_features() {
 }
 
 add_action('after_setup_theme', 'travel_features');
-
-
-
-function travel_adjust_queries($query) {
-  if (!is_admin() AND is_post_type_archive('wcm_travel') AND $query->is_main_query()) {
-    $today = date('Ymd');
-    $query->set('meta_key', 'travel_date');
-    $query->set('orderby', 'meta_value_num');
-    $query->set('order', 'ASC');
-    $query->set('meta_query', array(
-      array(
-        'key' => 'travel_date',
-        'compare' => '>=',
-        'value' => $today,
-        'type' => 'numeric'
-      )
-    ));
-  }
-}
-
-add_action('pre_get_posts', 'travel_adjust_queries');
  
   // Custom Post Types
   function travel_post_types() {
@@ -51,11 +30,11 @@ add_action('pre_get_posts', 'travel_adjust_queries');
       'public' => true,
       'show_in_rest' => true,
       'labels' => array(
-        'name' => 'wcm_travels',
-        'add_new_item' => 'Add New wcm_travel',
-        'edit_item' => 'Edit wcm_travel',
-        'all_items' => 'All wcm_travels',
-        'singular_name' => 'wcm_travel'
+        'name' => 'Resor',
+        'add_new_item' => 'Add New Resor',
+        'edit_item' => 'Edit Resor',
+        'all_items' => 'All Resor',
+        'singular_name' => 'Resor'
       ),
       'menu_icon' => 'dashicons-saved'
     ));
@@ -68,11 +47,11 @@ add_action('pre_get_posts', 'travel_adjust_queries');
       'public' => true,
       'show_in_rest' => true,
       'labels' => array(
-        'name' => 'travel_matches',
-        'add_new_item' => 'Add New travel_matches',
-        'edit_item' => 'Edit travel_matches',
-        'all_items' => 'All travel_matches',
-        'singular_name' => 'travel_matches'
+        'name' => 'Träningsresor',
+        'add_new_item' => 'Add New Träningsresor',
+        'edit_item' => 'Edit Träningsresor',
+        'all_items' => 'All Träningsresor',
+        'singular_name' => 'Träningsresor'
       ),
       'menu_icon' => 'dashicons-saved'
     ));
@@ -85,11 +64,11 @@ add_action('pre_get_posts', 'travel_adjust_queries');
       'public' => true,
       'show_in_rest' => true,
       'labels' => array(
-        'name' => 'travel_cups',
-        'add_new_item' => 'Add New travel_cup',
-        'edit_item' => 'Edit travel_cup',
-        'all_items' => 'All travel_cups',
-        'singular_name' => 'travel_cup'
+        'name' => 'Cuper',
+        'add_new_item' => 'Add New Cuper',
+        'edit_item' => 'Edit Cuper',
+        'all_items' => 'All Cuper',
+        'singular_name' => 'Cuper'
       ),
       'menu_icon' => 'dashicons-saved'
     ));
@@ -102,11 +81,11 @@ add_action('pre_get_posts', 'travel_adjust_queries');
       'public' => true,
       'show_in_rest' => true,
       'labels' => array(
-        'name' => 'travel_camps',
-        'add_new_item' => 'Add New travel_camp',
-        'edit_item' => 'Edit travel_camp',
-        'all_items' => 'All travel_camps',
-        'singular_name' => 'travel_camp'
+        'name' => 'Sportsresor',
+        'add_new_item' => 'Add New Sportsresor',
+        'edit_item' => 'Edit Sportsresor',
+        'all_items' => 'All Sportsresor',
+        'singular_name' => 'Sportsresor'
       ),
       'menu_icon' => 'dashicons-saved'
     ));
@@ -119,11 +98,11 @@ add_action('pre_get_posts', 'travel_adjust_queries');
       'public' => true,
       'show_in_rest' => true,
       'labels' => array(
-        'name' => 'travel_soccers',
-        'add_new_item' => 'Add New travel_soccer',
-        'edit_item' => 'Edit travel_soccer',
-        'all_items' => 'All travel_soccers',
-        'singular_name' => 'travel_soccer'
+        'name' => 'Fotbollsresor',
+        'add_new_item' => 'Add New Fotbollsresor',
+        'edit_item' => 'Edit Fotbollsresor',
+        'all_items' => 'All Fotbollsresor',
+        'singular_name' => 'Fotbollsresor'
       ),
       'menu_icon' => 'dashicons-saved'
     ));

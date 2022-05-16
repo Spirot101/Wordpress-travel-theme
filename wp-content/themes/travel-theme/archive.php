@@ -5,7 +5,7 @@
   <div class="page-banner__content container container--narrow">
     <h1 class="page-banner__title"><?php the_archive_title(); ?></h1>
     <div class="page-banner__intro">
-      <p><?php the_archive_description(); ?></p>
+      <p>Det finns något för alla! Ta en titt runt.</p>
     </div>
   </div>  
 </div>

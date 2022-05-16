@@ -9,7 +9,7 @@ while(have_posts()) {
     <div class="page-banner__content container container--narrow">
       <h1 class="page-banner__title"><?php the_title(); ?></h1>
       <div class="page-banner__intro">
-        <p>Det finns något för alla. Ta en titt runt.</p>
+        <p>Det finns något för alla! Ta en titt runt.</p>
       </div>
     </div>  
   </div>
@@ -18,10 +18,7 @@ while(have_posts()) {
   <div class="container container--narrow page-section">
     <div class="metabox metabox--position-up metabox--with-home-link">
 
-      <a class="metabox__archive-home-link" href="<?php echo site_url('wcm-travel') ?>"><i class="fa fa-plane" aria-hidden="true"></i> Resor</a> 
-      
-      <span class="metabox__main">Posted by <?php the_author_posts_link(); ?> on <?php the_time('n.j.y'); ?> in <?php echo get_the_category_list(', '); ?></span>
-      </p>
+      <a class="metabox__archive-home-link" href="<?php echo site_url('wcm-travel') ?>"><i class="fa fa-plane" aria-hidden="true"></i> Resor</a>
     </div>
 
     <!-- content and image -->
