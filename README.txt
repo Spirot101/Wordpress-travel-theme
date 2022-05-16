@@ -1,0 +1,1 @@
+Welcome to my Wordpress Travel Theme school project!
