@@ -25,7 +25,7 @@
         </ul>
       </nav>
       <div class="site-header__util">
-        <a href="#" class="btn btn--small btn--orange float-left push-right">Boka Resa</a>
+        <a href="<?php echo site_url('/kontakt') ?>" class="btn btn--small btn--orange float-left push-right">Boka Resa</a>
         <span class="search-trigger js-search-trigger"><i class="fa fa-search" aria-hidden="true"></i></span>
       </div>
     </div>

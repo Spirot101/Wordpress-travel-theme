@@ -1979,3 +1979,24 @@ text-decoration: none;
 .comment-reply-title small a:hover {
 text-decoration: underline;
 }
+
+/* Ratings */
+.testimonials {
+  text-align: center;
+  width: 50%;
+  margin: 25px;
+}
+.stars {
+  color: #F4D35E;
+  text-align: center;
+}
+.quote {
+  font-size: 1.6875rem;
+  font-weight: 400;
+  text-align: center;
+}
+.author {
+  color: orange;
+  font-style: italic;
+  text-align: center;
+}

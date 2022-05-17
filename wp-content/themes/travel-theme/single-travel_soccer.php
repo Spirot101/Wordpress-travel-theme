@@ -133,6 +133,9 @@ while(have_posts()) {
 
 </div>
 
+<!-- Ratings -->
+<?php get_template_part('template-parts/content-ratings'); ?>
+
 <!-- Newsletter -->
 <?php get_template_part('template-parts/content-newsletter'); ?>
 
