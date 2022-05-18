@@ -115,6 +115,7 @@ class Search {
     setTimeout(() => this.searchField.focus(), 301);
     console.log("our open method just ran!");
     this.isOverlayOpen = true;
+    return false;
   }
 
   closeOverlay() {
@@ -130,7 +131,7 @@ class Search {
         <div class="search-overlay__top">
           <div class="container">
             <i class="fa fa-search search-overlay__icon" aria-hidden="true"></i>
-            <input type="text" class="search-term" placeholder="What are you looking for?" id="search-term">
+            <input type="text" class="search-term" placeholder="Vad leter du efter?" id="search-term">
             <i class="fa fa-window-close search-overlay__close" aria-hidden="true"></i>
           </div>
         </div>

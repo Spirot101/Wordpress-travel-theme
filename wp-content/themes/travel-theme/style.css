@@ -388,11 +388,17 @@ li {
     position: fixed;
   }
 }
-/* Seach Form */
+/* Search Form */
 .search-form {
   background-color: #dedede;
   padding: 20px;
   text-align: center;
+  width: 50%;
+  margin: auto;
+}
+
+.sok {
+  margin-top: 25px;
 }
 
 .search-form label {

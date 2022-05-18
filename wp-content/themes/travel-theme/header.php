@@ -12,7 +12,7 @@
     <h1 class="school-logo-text float-left">
       <a href="<?php echo site_url() ?>"><strong>OLKA Sportresor</strong></a>
     </h1>
-    <span class="js-search-trigger site-header__search-trigger"><i class="fa fa-search" aria-hidden="true"></i></span>
+    <a href="<?php echo esc_url(site_url('/sok')); ?>" class="js-search-trigger site-header__search-trigger"><i class="fa fa-search" aria-hidden="true"></i></a>
     <i class="site-header__menu-trigger fa fa-bars" aria-hidden="true"></i>
     <div class="site-header__menu group">
       <nav class="main-navigation">
@@ -26,7 +26,7 @@
       </nav>
       <div class="site-header__util">
         <a href="<?php echo site_url('/kontakt') ?>" class="btn btn--small btn--orange float-left push-right">Boka Resa</a>
-        <span class="search-trigger js-search-trigger"><i class="fa fa-search" aria-hidden="true"></i></span>
+        <a href="<?php echo esc_url(site_url('/sok')); ?>" class="search-trigger js-search-trigger"><i class="fa fa-search" aria-hidden="true"></i></a>
       </div>
     </div>
   </div>
