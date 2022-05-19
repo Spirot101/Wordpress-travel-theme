@@ -5,8 +5,9 @@
   <div class="page-banner__content container container--narrow">
     <h1 class="page-banner__title"><?php the_archive_title(); ?></h1>
     <div class="page-banner__intro">
-      <p>Det finns något för alla! Ta en titt runt.</p>
+      <h3 class="headline headline--small">Det finns något för alla! Ta en titt runt.</h3>
     </div>
+    <a href="<?php echo site_url('/kontakt') ?>" class="btn btn--large btn--blue">Boka Din Resa!</a>
   </div>  
 </div>
 

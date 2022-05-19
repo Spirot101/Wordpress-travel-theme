@@ -19,6 +19,7 @@ while(have_posts()) {
     <div class="metabox metabox--position-up metabox--with-home-link">
 
       <a class="metabox__archive-home-link" href="<?php echo site_url('travel-soccer') ?>"><i class="fa fa-futbol" aria-hidden="true"></i> Fotbollsresor</a>
+      <a class="metabox__archive-home-link" href="<?php echo site_url('/kontakt') ?>"><i class="fa fa-badge-check" aria-hidden="true"></i> Boka Din Resa!</a>
     </div>
 
     <!-- content and image -->
