@@ -1,0 +1,12 @@
+.simple-contact-form {
+  width: 50%;
+}
+.simple-contact-form button {
+  width: 50%;
+}
+.simple-contact-form textarea {
+  width: 100%;
+}
+/* .simple-contact-form textarea::placeholder {
+  
+} */
