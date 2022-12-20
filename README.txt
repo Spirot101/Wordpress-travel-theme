@@ -1,1 +1,1 @@
-Welcome to my Wordpress Travel Theme school project!
+Welcome to my custom Wordpress Travel Theme school project!
